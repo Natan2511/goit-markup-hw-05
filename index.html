@@ -40,15 +40,15 @@
           </ul>
         </nav>
         <!-- COTACTS -->
-        <ul class="header-cont-flex">
-          <li>
+        <ul class="header-link-flex">
+          <li class="header-cont-flex">
             <a class="header-mail link" href="mailto:info@devstudio.com"
               ><svg class="icon-header" width="16" height="12">
                 <use href=".//images/symbol-defs.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-link-flex">
             <a class="header-tel link" href="”tel:+380961111111”"
               ><svg class="icon-header" width="10" height="16">
                 <use href=".//images/symbol-defs.svg#icon-smartphone"></use>
@@ -136,34 +136,19 @@
           <div class="container">
               <h2 class="picture-text">Чим ми займаємося</h2>
               <ul class="picture-list-flex">
-                <li class="picture-list">
+                <li>
                   <img
                     class="picture-marker"
                     src="./images/picture1.jpg"
                     alt="photo"
                     width="370"
                   />
-                  <div class="picture-cont">
-                    <h2 class="picture-tittle">
-                      Десктопні додатки
-                    </h2>
-                  </div>
                 </li>
-                <li class="picture-list">
+                <li>
                   <img src="./images/picture2.jpg" alt="photo" width="370" />
-                  <div class="picture-cont">
-                    <h2 class="picture-tittle">
-                      Мобільні додатки
-                    </h2>
-                  </div>
                 </li>
-                <li class="picture-list">
+                <li>
                   <img src="./images/picture3.jpg" alt="photo" width="370" />
-                  <div class="picture-cont">
-                    <h2 class="picture-tittle">
-                      Дизайнерські рішення
-                    </h2>
-                  </div>
                 </li>
               </ul>
           </div>
@@ -381,7 +366,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <section class="footer-section">
+        <div class="footer-section">
           <!-- LOGO -->
           <a class="footer-logo link" href="./index.html"
             >Web<span class="footer-logo-text">Studio</span></a
@@ -413,11 +398,11 @@
               </li>
             </ul>
           </address>
-        </section>
+        </div>
         <!-- SOCIAL -->
-        <section class="social">
+        <div class="social">
           <div class="container">
-            <h2 class="social-tittle">приєднуйтесь</h2>
+            <p class="social-tittle">приєднуйтесь</p>
             <ul class="social-list list">
               <li class="social-item">
                 <a href="" class="social-link link">
@@ -449,7 +434,6 @@
               </li>
             </ul>
           </div>
-        </section>
       </div>
     </footer>
   </body>
