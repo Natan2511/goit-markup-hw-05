@@ -32,10 +32,10 @@
               >
             </li>
             <li>
-              <a class="header-link link" href="portfolio.html">Портфоліо</a>
+              <a class="header-link link header-stud" href="portfolio.html">Портфоліо</a>
             </li>
             <li>
-              <a class="header-link link" href="#">Контакти</a>
+              <a class="header-link link header-stud" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +65,7 @@
           <h1 class="main-text main-text-flex">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button class="main-button" type="button">
+          <button class="main-button" type="button" data-modal-open>
             <span class="main-text-button button-text-flex"
               >Замовити послугу</span
             >
@@ -136,19 +136,34 @@
           <div class="container">
               <h2 class="picture-text">Чим ми займаємося</h2>
               <ul class="picture-list-flex">
-                <li>
+                <li class="picture-list">
                   <img
                     class="picture-marker"
                     src="./images/picture1.jpg"
                     alt="photo"
                     width="370"
                   />
+                  <div class="picture-cont">
+                    <h2 class="picture-tittle">
+                      Десктопні додатки
+                    </h2>
+                  </div>
                 </li>
-                <li>
+                <li class="picture-list">
                   <img src="./images/picture2.jpg" alt="photo" width="370" />
+                  <div class="picture-cont">
+                    <h2 class="picture-tittle">
+                      Мобільні додатки
+                    </h2>
+                  </div>
                 </li>
-                <li>
+                <li class="picture-list">
                   <img src="./images/picture3.jpg" alt="photo" width="370" />
+                  <div class="picture-cont">
+                    <h2 class="picture-tittle">
+                      Дизайнерські рішення
+                    </h2>
+                  </div>
                 </li>
               </ul>
           </div>
@@ -436,5 +451,16 @@
           </div>
       </div>
     </footer>
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="icon-modal" width="17" height="17">
+            <use href=".//images/X.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
