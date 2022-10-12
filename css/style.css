@@ -414,10 +414,11 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background var(--transition-animation);
+  transition: background-color var(--transition-animation);
 }
 .team-icon {
   fill: var(--grayish-blue);
+  transition: fill var(--transition-animation);
 }
 .team-link-item:hover {
   background-color: var(--vivid-blue);
@@ -446,7 +447,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 250ms;
+  transition: border-color var(--transition-animation);
 }
 .regular-tittle {
   font-weight: 700;
@@ -459,11 +460,16 @@ body {
 }
 .regular-icon {
   fill: var(--grayish-blue);
+  transition: fill var(--transition-animation);
 }
 .regular-link:hover {
   border-color: var(--vivid-blue);
 }
 .regular-link:hover .regular-icon {
+  fill: var(--vivid-blue);
+}
+.regular-link:hover .regular-icon,
+.regular-link:focus .regular-icon {
   fill: var(--vivid-blue);
 }
 /* ---------------------FOOTER--------------------- */
@@ -518,7 +524,7 @@ body {
 }
 .footer-address:hover,
 :focus {
-  color: var(--vivid-blue);
+  border-color: var(--vivid-blue);
 }
 .social {
   margin-left: 60px;
@@ -645,7 +651,8 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 6px 22px 6px 22px;
-  transition: color var(--transition-animation);
+  transition: color var(--transition-animation),
+    background var(--transition-animation);
 }
 .port-main-button:hover,
 .port-main-button:focus {
@@ -685,7 +692,6 @@ body {
   margin-bottom: 94px;
 }
 .project-list {
-  transition: var(--transition-animation);
 }
 .project-item {
   width: 370px;
@@ -732,7 +738,7 @@ body {
   padding: 40px;
   height: 100%;
   transform: translateY(100%);
-  transition-duration: 250ms;
+  transition: var(--transition-animation);
 }
 .project-list:hover .project-top-text {
   transform: translateY(0%);
