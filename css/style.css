@@ -565,7 +565,7 @@ body {
   height: 100%;
   position: fixed;
   top: 0;
-  transition-duration: 250ms;
+  transition: var(--transition-animation);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .modal {
@@ -707,7 +707,6 @@ body {
   color: var(--dark-gray);
 }
 .card-flex {
-  padding-top: 20px;
   border-top: 0;
   padding: 20px 24px;
   border: 1px solid var(--very-light-gray-two);
