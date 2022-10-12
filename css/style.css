@@ -11,6 +11,7 @@
   --grayish-blue: #afb1b8;
   --very-light-gray: #ececec;
   --very-light-gray-two: #eeeeee;
+  --transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -116,7 +117,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--very-dark-gray);
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .header-studio {
   font-weight: 500;
@@ -153,7 +154,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--dark-gray);
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -175,7 +176,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--dark-gray);
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .header-mail:hover,
 :focus {
@@ -413,7 +414,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-duration: 250ms;
+  transition: background var(--transition-animation);
 }
 .team-icon {
   fill: var(--grayish-blue);
@@ -501,7 +502,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .footer-tittle:hover,
 :focus {
@@ -513,7 +514,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--white);
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .footer-address:hover,
 :focus {
@@ -549,7 +550,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-duration: 250ms;
+  transition: background var(--transition-animation);
 }
 .social-icon {
   fill: var(--white);
@@ -644,7 +645,7 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 6px 22px 6px 22px;
-  transition-duration: 250ms;
+  transition: color var(--transition-animation);
 }
 .port-main-button:hover,
 .port-main-button:focus {
@@ -684,12 +685,12 @@ body {
   margin-bottom: 94px;
 }
 .project-list {
+  transition: var(--transition-animation);
+}
+.project-item {
   width: 370px;
   height: 404px;
   background: var(--white);
-  transition-duration: 250ms;
-}
-.project-item {
 }
 .project-after {
   font-weight: 700;
